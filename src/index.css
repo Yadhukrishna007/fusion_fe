@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .-scrollbar {
+    @apply scrollbar-thin scrollbar-thumb-gray-300   dark:scrollbar-thumb-gray-100 scrollbar-track-white  dark:scrollbar-track-black;
+  }
+
+  /* primary */
+  .icon-primary {
+    @apply fill-[#9747FF];
+  }
+  .bg-primary {
+    @apply bg-[#9747FF];
+  }
+
+  /* text */
+  .text-neutral_gray {
+    @apply text-[#888888];
+  }
+  .text-light-black_dark-white {
+    @apply text-[#1A1D1F] dark:text-white;
+  }
+
+  /* background */
+  .bg-light-white_dark-charcoal-gray {
+    @apply bg-white dark:bg-[#242731];
+  }
+
+  .bg-light-soft-gray_dark-black {
+    @apply bg-[#F5F4F6] dark:bg-[#1f2128];
+  }
+
+  .bg-offline {
+    @apply bg-[#FF033E];
+  }
+  .bg-online {
+    @apply bg-[#4FFFB0];
+  }
+  /* border */
+  .border-light-white_dark-charcoal-gray {
+    @apply border-white dark:border-[#242731];
+  }
+  .box {
+    @apply border-[#F5F4F6];
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .signin_or_signup_button {
+    @apply text-white  bg-violet-700 rounded-full p-2 w-48 mx-auto font-medium;
+  }
+
+  .sidepanel {
+    @apply max-h-screen max-sm:min-w-[80px]  max-sm:max-w-[120px]  sm:min-w-[120px]  sm:max-w-[120px]
+    lg:min-w-[180px]  max-lg:mr-2 mr-6;
+  }
+  .sidepanel_button {
+    @apply w-full   flex items-center  justify-center lg:justify-start lg:px-10 space-x-4 
+     py-4 text-2xl lg:text-xl hover:text-violet-700 dark:hover:text-violet-400 dark:text-white  hover:bg-light-soft-gray_dark-black  font-medium;
+  }
+
+  .sidepanel_txt {
+    @apply hidden lg:block dark:text-white dark:hover:text-violet-400;
+  }
+  .chat_section {
+    @apply max-h-screen max-sm:min-w-[80%] sm:min-w-[60%] md:min-w-[50%]  
+    lg:min-w-[40%]  xl:min-w-[23%];
+  }
+
+  .chat_header_btn {
+    @apply w-12 h-12 rounded-full bg-soft_gray dark:bg-[#3a3b41] flex items-center justify-center text-xl;
+  }
+  .profile {
+    @apply w-full   flex items-center  justify-center lg:justify-start lg:px-8 space-x-4  
+    py-4 text-2xl lg:text-xl hover:text-violet-700 dark:hover:text-violet-400 dark:text-white  hover:bg-light-soft-gray_dark-black  font-medium;
+  }
+}
+
+.appear {
+  filter: blur(0) !important;
+  pointer-events: auto !important;
+}
+
+.overflow {
+  overflow-wrap: break-word;
+}
+
+.box_shadow {
+  box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.caller {
+  text-align: center;
+  color: #fff;
+}
+
+.active-theme {
+  filter: invert(53%) sepia(98%) saturate(3332%) hue-rotate(0deg)
+    brightness(104%) contrast(106%) !important;
+}
+
+.text_stroke {
+  -webkit-text-stroke: 0.5px violet;
+}
+
+/*--- Emoji Scroollbar
+  /* width */
+.epr-body::-webkit-scrollbar {
+  width: 6px !important;
+}
+
+/* Track */
+.epr-body::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* Handle */
+.epr-body::-webkit-scrollbar-thumb {
+  background: #444e54 !important;
+}
+
+.openEmojiAnimation {
+  animation: openAn 0.1s forwards;
+}
+@keyframes openAn {
+  0% {
+    transform: translateY(60px);
+  }
 }
