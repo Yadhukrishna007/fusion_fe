@@ -48,7 +48,7 @@ export default function RegisterForm() {
       }
     } catch (error) {
       setMessage({
-        error_message: error.response.data.Error.message,
+        error_message: error?.response?.data?.Error?.message,
         success_message: "",
       });
     } finally {
