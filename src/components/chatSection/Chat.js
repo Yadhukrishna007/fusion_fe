@@ -108,7 +108,7 @@ const Chat = ({ socket, item, typing, lang, langKey }) => {
           {/* Typing */}
           {typing === item._id ? (
             <span className="text-neutral_gray">
-              {`${lang[langKey].typing}...`}
+              `${lang[langKey].typing}...`
             </span>
           ) : (
             <span className="text-neutral_gray">
