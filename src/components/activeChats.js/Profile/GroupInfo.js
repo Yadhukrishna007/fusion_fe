@@ -111,7 +111,7 @@ const GroupInfo = ({ activeConversation, token, socket, lang, langKey }) => {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center text-light-black_dark-white ">
         <img
           src={picture}
           className="w-40 h-40 rounded-full  border-2 border-[#F5F4F6] "
@@ -154,7 +154,7 @@ const GroupInfo = ({ activeConversation, token, socket, lang, langKey }) => {
         <div className="flex flex-col gap-[2px] w-[70%]">
           <h1 className="text-neutral_gray"> {lang[langKey].name}</h1>
 
-          <div className="font-bold flex items-center justify-between ">
+          <div className="font-bold flex items-center justify-between text-light-black_dark-white ">
             {visible.showName ? (
               <input
                 ref={nameInputRef}
@@ -219,7 +219,7 @@ const GroupInfo = ({ activeConversation, token, socket, lang, langKey }) => {
         <div className="flex flex-col gap-[2px] w-[70%]">
           <h1 className="text-neutral_gray "> {lang[langKey].description}</h1>
 
-          <div className="font-bold flex items-center justify-between ">
+          <div className="font-bold flex items-center justify-between text-light-black_dark-white ">
             {visible.showDescription ? (
               <textarea
                 ref={descriptionInputRef}
@@ -299,7 +299,9 @@ const GroupInfo = ({ activeConversation, token, socket, lang, langKey }) => {
               alt={`Avatar of ${user.name}`}
             />
             <div className="flex flex-col">
-              <h1 className="font-semibold">{user.name}</h1>
+              <h1 className="font-semibold text-light-black_dark-white ">
+                {user.name}
+              </h1>
               <h1 className="text-neutral_gray">{user.status}</h1>
             </div>
           </div>
