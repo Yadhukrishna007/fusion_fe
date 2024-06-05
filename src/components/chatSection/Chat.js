@@ -15,7 +15,7 @@ import {
 
 import { nameSlice } from "../../utils/slice";
 
-const Chat = ({ socket, item, typing }) => {
+const Chat = ({ socket, item, typing, lang, langKey }) => {
   const { user, onlineUsers } = useSelector((store) => store.user);
 
   const token = user.token;
@@ -107,7 +107,9 @@ const Chat = ({ socket, item, typing }) => {
           </h1>
 
           {typing === item._id ? (
-            <span className="text-neutral_gray">Typing...</span>
+            <span className="text-neutral_gray">
+              `${lang[langKey].typing}...`
+            </span>
           ) : (
             <span className="text-neutral_gray">
               {finalMessage

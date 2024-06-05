@@ -36,7 +36,13 @@ const ChatSection = ({
           {conversations
             ?.filter((item) => item.latestMessage || item.isGroup === true)
             .map((item) => (
-              <Chat key={item._id} item={item} typing={typing} />
+              <Chat
+                key={item._id}
+                item={item}
+                typing={typing}
+                lang={lang}
+                langKey={langKey}
+              />
             ))}
         </div>
       ) : searchResults.length > 0 ? (

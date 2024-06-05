@@ -19,7 +19,7 @@ export const lang = {
     group_details: "Group Details",
     enter_group_name: "Enter Group Name",
     enter_group_description: "Enter Group Description",
-    typing: "typing",
+    typing: "Typing",
     message: "Type a message",
     files: "Files",
     Images_videos: "Images & Videos",
