@@ -105,7 +105,7 @@ const Chat = ({ socket, item, typing, lang, langKey }) => {
               ? nameSlice(item.name)
               : nameSlice(findReceiverName(user.userId, item.users))}
           </h1>
-
+          {/* Typing */}
           {typing === item._id ? (
             <span className="text-neutral_gray">
               {`${lang[langKey].typing}...`}
