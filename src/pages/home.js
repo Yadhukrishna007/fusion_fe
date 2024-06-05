@@ -167,7 +167,7 @@ const Home = ({ socket }) => {
         });
 
         peer.on("error", (err) => {
-          alert("Peer error.Please try again later");
+          alert("Connection error.Please try again later");
         });
 
         socket.on("callAccepted", (data) => {
@@ -184,7 +184,7 @@ const Home = ({ socket }) => {
         connectionRef.current = peer;
       })
       .catch((err) => {
-        alert("Error getting user media");
+        alert("Connection error.Please try again later");
       });
   };
 
@@ -218,7 +218,7 @@ const Home = ({ socket }) => {
         peer.on("close", () => {});
 
         peer.on("error", (err) => {
-          alert("Peer error.Please try again later");
+          alert("Connection error.Please try again later");
         });
 
         peer.signal(callerSignal);
@@ -226,7 +226,7 @@ const Home = ({ socket }) => {
         connectionRef.current = peer;
       })
       .catch((err) => {
-        alert("Error getting user media");
+        alert("Connection error.Please try again later");
       });
   };
 
@@ -339,9 +339,7 @@ const Home = ({ socket }) => {
 
       dispatch(storeOpenConversation(conversationData));
     } catch (error) {
-      alert(
-        "An error occurred while fetching the conversations. Please try again later."
-      );
+      alert("Unexpected error.");
     }
   };
 
