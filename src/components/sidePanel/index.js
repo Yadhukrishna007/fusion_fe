@@ -29,7 +29,9 @@ const SidePanel = ({
       <div className="flex flex-col items-center mb-10 mt-4 h-[70%]  w-full ">
         <div className=" flex items-center justify-center space-x-4 mt-4  font-bold lg:py-5 text-xl  w-full">
           <img src="/app_logo.png" alt="app_name" className="w-12 h-12" />
-          <span className="sidepanel_txt text-[24px] font-bold">FUSION</span>
+          <span className="sidepanel_txt text-[24px] font-bold">
+            {lang[langKey].fusion}
+          </span>
         </div>
 
         <button

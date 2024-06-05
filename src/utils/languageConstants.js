@@ -33,6 +33,7 @@ export const lang = {
     calling: "Calling",
     User_is_offline: "User is offline",
     is_calling: "is calling...",
+    fusion: "Fusion",
     Name_should_be_atleast_2_characters: "Name should be atleast 2 characters",
     Name_should_not_exceed_20_characters:
       "Name should not exceed 20 characters",
@@ -81,6 +82,7 @@ export const lang = {
     calling: "कॉलिंग",
     User_is_offline: "उपयोगकर्ता ऑफ़लाइन है",
     is_calling: "कॉल कर रहा है...",
+    fusion: "फ्यूज़न",
     Name_should_be_atleast_2_characters: "नाम कम से कम 2 अक्षर का होना चाहिए",
     Name_should_not_exceed_20_characters:
       "नाम 20 अक्षरों से अधिक नहीं होना चाहिए",
@@ -131,6 +133,7 @@ export const lang = {
     calling: "呼叫",
     User_is_offline: "用户离线",
     is_calling: "正在打电话...",
+    fusion: "融合",
     Name_should_be_atleast_2_characters: "名称至少应包含 2 个字符",
     Name_should_not_exceed_20_characters: "名称不得超过 20 个字符",
     Status_should_not_exceed_20_characters: "状态不应超过 20 个字符",
@@ -176,6 +179,7 @@ export const lang = {
     calling: "vocación",
     User_is_offline: "El usuario está desconectado",
     is_calling: "esta llamando...",
+    fusion: "Fusión",
     Name_should_be_atleast_2_characters:
       "El nombre debe tener al menos 2 caracteres.",
     Name_should_not_exceed_20_characters:
