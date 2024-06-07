@@ -9,7 +9,7 @@ A Real-time Messaging platform. Leveraged Socket.IO and WebRTC to enable face-to
 
 
 
-## Features
+## Features ✨
 
 * Real-time Messaging: Leveraged Socket.IO and WebRTC to enable face-to-face video calls and instant messaging.
 * File Sharing: Enabled users to share various file types including images, videos, documents (PDF/DOC), and compressed files (RAR/ZIP), enhancing collaboration.
@@ -26,7 +26,7 @@ A Real-time Messaging platform. Leveraged Socket.IO and WebRTC to enable face-to
 * Real-time Online Status: Provided users with real-time status updates, indicating the online presence of contacts for effective communication.
 
 
-## Tech Stack
+## Tech Stack 💻
 
 **Client:** React, Redux, TailwindCSS
 
@@ -48,7 +48,7 @@ Download Files
 - Either download the ZIP file and unpack it or clone with git
 
 - Then open the folder in your favourite IDE
-## Installation
+## Installation ⬇️
 
 - Install the App
 
@@ -83,7 +83,7 @@ Download Files
 - Either download the ZIP file and unpack it or clone with git
 
 - Then open the folder in your favourite IDE
-## Installation
+## Installation ⬇️
 
 - Install the App
 
