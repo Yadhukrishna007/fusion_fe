@@ -1,71 +1,158 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FUSION
 
-## Available Scripts
+A Real-time Messaging platform. Leveraged Socket.IO and WebRTC to enable face-to-face video calls and instant messaging.
 
-In the project directory, you can run:
 
-### `yarn start`
+![Logo](https://res.cloudinary.com/duxrswftp/image/upload/v1717689270/chatbot/Blue_and_Green_Modern_Soccer_Match_Banner_1_ww2ij9.png)
+![App Screenshot](https://res.cloudinary.com/duxrswftp/image/upload/v1717739965/chatbot/63a78055-7261-4524-bca3-49f221065dab.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Real-time Messaging: Leveraged Socket.IO and WebRTC to enable face-to-face video calls and instant messaging.
+* File Sharing: Enabled users to share various file types including images, videos, documents (PDF/DOC), and compressed files (RAR/ZIP), enhancing collaboration.
+* Group Chats: Facilitated group discussions and idea sharing with support for multiple participants in real-time.
+* Typing Indicator: Enhanced user experience by displaying typing indicators, allowing users to see when others are composing messages.
+* Emoji Support: Enriched communication by providing a diverse range of emojis for users to express themselves effectively.
+* Advanced Search: Implemented an advanced search functionality for users to easily find contacts within the platform.
+* State Management: Utilized Redux Toolkit along with Redux Persist for efficient state management, ensuring seamless user interactions.
+* Multilanguage Support: Catered to diverse user bases by offering multilanguage support within the platform.
+* Dark/Light Mode: Incorporated a dark/light mode feature for customizable user experiences.
+* User Profile Management: Enabled users to edit their profiles, including group descriptions and profile pictures, enhancing personalization.
+* Media Storage: Utilized Cloudinary for efficient storage and management of media files within the platform.
+* Validation: Implemented robust validation mechanisms using React Hook Form to ensure data integrity and security.
+* Real-time Online Status: Provided users with real-time status updates, indicating the online presence of contacts for effective communication.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Client:** React, Redux, TailwindCSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Server:** Node, ExpressJS,Socket.I.O,Cloudinary
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Setup Front end
+Download Files  
+- Go to our github repository: https://github.com/Yadhukrishna007/fusion_fe
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Download Zip or clone repo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![App Screenshot](https://res.cloudinary.com/duxrswftp/image/upload/v1717736242/chatbot/35d40a3a-ae11-48f3-a665-3b1bc11de7c4.png)
 
-### Code Splitting
+- Either download the ZIP file and unpack it or clone with git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Then open the folder in your favourite IDE
+## Installation
 
-### Analyzing the Bundle Size
+- Install the App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  yarn install 
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Setup .env
+```bash
+REACT_APP_API_ENDPOINT=http://localhost:8000/api   //I have used this endpoint for my backend server, you can change it to your own server endpoint.
 
-### Deployment
+REACT_APP_SERVER_ENDPOINT=http://localhost:8000 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+REACT_APP_CLOUD_NAME= u_r_cloud_name          //You can get this from your cloudinary account
+REACT_APP_CLOUD_SECRET= your_cloud_secret     //You can get this from your cloudinary account
+```
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# fusion_fe
+
+
+## Setup Backend
+Download Files 
+- Go to our github repository: https://github.com/Yadhukrishna007/fusion_be
+
+- Download Zip or clone repo
+
+![App Screenshot](https://res.cloudinary.com/duxrswftp/image/upload/v1717737524/chatbot/d39cb1af-d660-4185-9bf1-7ff93c13b846.png)
+
+- Either download the ZIP file and unpack it or clone with git
+
+- Then open the folder in your favourite IDE
+## Installation
+
+- Install the App
+
+```bash
+  yarn install 
+
+```
+
+
+
+
+## Setup .env
+```bash
+PORT=8000
+
+DATABASE_NODE_URL= //your database url
+
+ACCESS_TOKEN_SECRET=aKzdsPgY5g4G     //generate your own secret key
+
+REFRESH_TOKEN_SECRET=LpwfLQ4PTYbu    //generate your own secret key
+
+CLIENT_ENDPOINT=http://localhost:3000 
+
+
+```
+
+
+
+
+
+## Run Fusion backend
+
+
+```bash
+  npm run dev  
+
+```
+
+- Runs the app in the development mode.
+Go to http://localhost:8000/api/test.    If the page returns
+```bash
+{
+"title": "Express Testing",
+"message": "The app is working properly!"
+}
+```
+Then you have successfully setup the server
+
+
+
+## Setup Backend
+Download Files 
+- Go to our github repository: https://github.com/Yadhukrishna007/fusion_be
+
+- Download Zip or clone repo
+
+![App Screenshot](https://res.cloudinary.com/duxrswftp/image/upload/v1717737524/chatbot/d39cb1af-d660-4185-9bf1-7ff93c13b846.png)
+
+- Either download the ZIP file and unpack it or clone with git
+
+- Then open the folder in your favourite IDE
+## Run Fusion Frontend
+
+
+```bash
+  npm start  
+
+```
+
+- Runs the app in the development mode.
+
+- Open http://localhost:3000 to view it in the browser.
