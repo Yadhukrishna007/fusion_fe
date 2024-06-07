@@ -123,7 +123,8 @@ CLIENT_ENDPOINT=http://localhost:3000
 ```
 
 - Runs the app in the development mode.
-Go to http://localhost:8000/api/test.    If the page returns
+Go to http://localhost:8000/api/test
+If the page returns
 ```bash
 {
 "title": "Express Testing",
@@ -134,17 +135,6 @@ Then you have successfully setup the server
 
 
 
-## Setup Backend
-Download Files 
-- Go to our github repository: https://github.com/Yadhukrishna007/fusion_be
-
-- Download Zip or clone repo
-
-![App Screenshot](https://res.cloudinary.com/duxrswftp/image/upload/v1717737524/chatbot/d39cb1af-d660-4185-9bf1-7ff93c13b846.png)
-
-- Either download the ZIP file and unpack it or clone with git
-
-- Then open the folder in your favourite IDE
 ## Run Fusion Frontend
 
 
