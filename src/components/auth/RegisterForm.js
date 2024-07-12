@@ -61,8 +61,8 @@ const RegisterForm = () => {
     }
   };
   return (
-    <div className="w-[80%] h-[60%] sm:w-[60%] lg:max-w-[800px]  lg:max-h-[500px]  flex ">
-      <div className=" flex flex-col w-full h-full space-y-5  bg-white  items-center justify-between  p-5 py-20 rounded-xl lg:rounded-r-none ">
+    <div className="w-[80%] max-h-lg sm:w-[60%] lg:max-w-[800px]   flex items-center bg-white rounded-xl">
+      <div className=" flex flex-col w-full h-full   items-center justify-between  p-5 py-20 rounded-xl lg:rounded-r-none ">
         <h1 className="font-sans text-xl">Hello,friend</h1>
 
         <form
@@ -114,6 +114,7 @@ const RegisterForm = () => {
           </Link>
         </div>
       </div>
+
       <div className=" hidden lg:block bg-gradient-to-b from-violet-600 to-blue-700  w-1/2  text-white rounded-r-xl ">
         <div className="flex flex-col mt-32 space-y-4 w-60  mx-auto">
           <h1 className="font-allura text-6xl  font-bold text-center">
