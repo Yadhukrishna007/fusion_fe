@@ -26,6 +26,8 @@ const InputSpace = ({ id, socket }) => {
   const { setToggleSearch, setSearchResults, searchInputRef } =
     useContext(SearchContext);
   const inputHandler = async () => {
+    setShowEmoji(false);
+    setShowAttachments(false);
     if (inputMessage) {
       searchInputRef.current.value = "";
       setSearchResults([]);
@@ -97,7 +99,7 @@ const InputSpace = ({ id, socket }) => {
       <Formik
         enableReinitialize
         initialValues={{ inputMessage }}
-        onSubmit={(e) => inputHandler(e)}
+        // onSubmit={(e) => inputHandler(e)}
       >
         {(form) => (
           <Form
@@ -140,9 +142,9 @@ const InputSpace = ({ id, socket }) => {
             ) : (
               <button
                 type="submit"
-                onClick={() => {
-                  setShowEmoji(false);
-                  setShowAttachments(false);
+                onClick={() => !loading && inputHandler()}
+                onKeyDown={(e) => {
+                  !loading && e.key === "Enter" && inputHandler();
                 }}
               >
                 <IoSendSharp className="text-2xl text-light-black_dark-white" />
