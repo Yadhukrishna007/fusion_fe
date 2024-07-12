@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { registerUser } from "../../store/userSlice";
 import { useState } from "react";
 import axios from "axios";
-export default function RegisterForm() {
+export default function LoginForm() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const initialvalues = {
@@ -56,8 +56,8 @@ export default function RegisterForm() {
     }
   };
   return (
-    <div className="w-[80%] h-[60%] sm:w-[60%] lg:max-w-[800px] lg:max-h-[500px] lg:h-[50%] flex  ">
-      <div className=" flex flex-col w-full h-full space-y-5  bg-white  items-center justify-between  p-5 py-20 rounded-xl lg:rounded-r-none">
+    <div className="w-[80%] max-h-lg sm:w-[60%] lg:max-w-[800px]  flex   flex items-center bg-white rounded-xl ">
+      <div className=" flex flex-col w-full h-full     items-center justify-between  p-5 py-20 rounded-xl lg:rounded-r-none ">
         <div className="text-center">
           <h1 className="font-sans text-xl">Hello!</h1>
           <span>Sign in to your account</span>
