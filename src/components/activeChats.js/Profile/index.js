@@ -19,7 +19,10 @@ const Info = ({ activeConversation, visible, setVisible }) => {
       className={`${visible ? "block" : "hidden"}  h-full bg-light-white_dark-charcoal-gray  rounded-xl  right-0 top-0 w-[60%] border-[2px] 
       border-nuetral_gray flex flex-col gap-10 items-center overflow-y-auto -scrollbar `}
     >
-      <div className="font-extrabold items-center text-2xl  flex gap-4 w-full p-4  h-[10%] text-light-black_dark-white  ">
+      <div
+        className="font-extrabold items-center text-2xl  flex gap-4 w-full p-4  h-[10%] text-light-black_dark-white   
+      bg-red-400 lg:w-[20rem] xl:w-full"
+      >
         <FaLongArrowAltLeft onClick={() => setVisible(false)} />
         <span>
           {isGroup ? lang[langKey].group_info : lang[langKey].contact_info}
