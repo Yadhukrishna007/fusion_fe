@@ -12,7 +12,7 @@ const UserInfo = ({ activeConversation, userId, lang, langKey }) => {
         src={picture}
         className="w-44 h-44 rounded-full border-2  border-[#F5F4F6] mt-4"
       />
-      <div className="flex flex-col items-start justify-start  w-[50%] mx-auto gap-4 mt-10">
+      <div className="flex flex-col items-start justify-start   mx-auto gap-4 mt-10  px-2">
         <div>
           <h1 className="text-neutral_gray">{lang[langKey].name}</h1>
 
