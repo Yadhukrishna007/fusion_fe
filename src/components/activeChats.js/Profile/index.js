@@ -21,7 +21,7 @@ const Info = ({ activeConversation, visible, setVisible }) => {
     >
       <div
         className="font-extrabold items-center text-2xl  flex gap-4 w-full p-4  h-[10%] text-light-black_dark-white   
-      bg-red-400 lg:w-[20rem] xl:w-full"
+       lg:w-[20rem] xl:w-full"
       >
         <FaLongArrowAltLeft onClick={() => setVisible(false)} />
         <span>
