@@ -117,7 +117,10 @@ const GroupInfo = ({ activeConversation, token, socket, lang, langKey }) => {
           className="w-40 h-40 rounded-full  border-2 border-[#F5F4F6] "
         />
         {isAdmin && (
-          <div className="flex items-center justify-between text-sm px-10 font-bold mt-10 gap-8 mb-6">
+          <div
+            className="flex items-center justify-between text-sm px-10 xl:px-4 font-bold mt-10 gap-8 
+          mb-6 "
+          >
             <button
               className="hover:text-[#397e35]"
               onClick={() => imageRef.current.click()}
